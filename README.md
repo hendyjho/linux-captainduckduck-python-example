@@ -1,7 +1,11 @@
 # linux-captainduckduck-python-example
-Digital Ocean Docker instance with Captain Duck Duck App installer. (Heroku similar app management)
+Setting up Digital Ocean Docker instance with Captain Duck Duck App installer. (Heroku similar app management)
 
-After instance started npm and node should be installed.
+After starting instance, npm and node should be installed. (apt install npm & node)
+
+	curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+	sudo apt-get install -y nodejs
+	sudo apt-get install npm
 
 Python - Flask based working example app with "Captain Duck Duck" setting file.
 
