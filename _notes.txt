@@ -6,3 +6,7 @@ docker build -t flask-sample-one:latest .
 run image as container
 docker run -d -p 5000:5000 flask-sample-one
 
+Docker related options
+docker service update srv-captain--[your-app-name] --detach --force                ## restarts your app
+To see Docker output
+docker service logs srv-captain--[your-app-name] --since 10m --follow              ## shows last 10 minutes of logs
