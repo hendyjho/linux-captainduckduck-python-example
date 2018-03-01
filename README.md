@@ -26,7 +26,9 @@ Other details on setting custom domain
 
 
 Application <b>deployment</b> methods are described here:
-https://github.com/githubsaturn/captainduckduck/wiki/Deployment-Methods
+
+	https://github.com/githubsaturn/captainduckduck/wiki/Deployment-Methods
+
 
 <b>Other settings</b> needs to attension:
 
