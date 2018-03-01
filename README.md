@@ -1,8 +1,10 @@
 # linux-captainduckduck-python-example
 Setting up Digital Ocean Docker instance with Captain Duck Duck App installer. (Heroku similar app management)
-Repository contains Python - Flask based working example app with "Captain Duck Duck" setting file.
 
-After starting instance, npm and node should be installed. (apt install npm & node)
+Repository contains Python - Flask - Gunicorn based working example app with "Captain Duck Duck" setting file.
+Also contains dockerfile to test it out on local docker environment.
+
+After starting instance, npm and node should be installed.
 
 	curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 	sudo apt-get install -y nodejs
@@ -47,6 +49,6 @@ If it is necessery to change (app exposed on different port over Docer) Nginx se
 	set $upstream http://<%-s.localDomain%>:8080;
 	
 
-Other things to consider:
+<b>Other things to consider:</b>
 
 -There is no gracefull reload or Blue/Green deployment option.
