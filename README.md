@@ -6,7 +6,7 @@ https://github.com/githubsaturn/captainduckduck
 
 To set up domain:
 
-	In your domain registrar (and Digital Ocean etc...) settings there should be 2 records;
+	In your domain registrar (and Digital Ocean (etc...) domain settings also) settings there should be 2 records;
 	A Record - subdomain - ip
 	A Record - *.subdomain - ip
 
