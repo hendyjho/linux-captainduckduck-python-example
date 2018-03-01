@@ -7,5 +7,6 @@ https://github.com/githubsaturn/captainduckduck
 Deployment methods are described here:
 https://github.com/githubsaturn/captainduckduck/wiki/Deployment-Methods
 
-To start application with gunicorn "captain-definition" file should be used (default)
+To start application with gunicorn "captain-definition" file should be used (default).
+
 To start application with Flask web server "captain-definition.1" should be used (after renaming file to captain-definition)
