@@ -32,17 +32,21 @@ Application <b>deployment</b> methods are described here:
 
 <b>Other settings</b> needs to attension:
 
-To start application with gunicorn "captain-definition" file should be used (default).
+To start application with <u>gunicorn</u> "captain-definition" file should be used (default).
 
   	"CMD gunicorn --bind 0.0.0.0:80 wsgi:fapp"
 
-To start application with Flask web server "captain-definition.1" should be used (after renaming file to captain-definition)
+To start application with <u>Flask web server</u> "captain-definition.1" should be used (after renaming file to captain-definition)
 
 	"ENTRYPOINT [\"python\"]",
 	"CMD [\"app.py\"]",	
 
-No need to change port settings. Captain expects default Docker container port as 80.
+<u>No need to change port settings.</u> Captain expects default Docker container port as 80.
 If it is necessery to change (app exposed on different port over Docer) Nginx settings should be arranged as well in Captain application app settings as follows
 
 	set $upstream http://<%-s.localDomain%>:8080;
 	
+
+Other things to consider:
+
+-There is no gracefull reload or Blue/Green deployment option.
