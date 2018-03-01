@@ -10,3 +10,9 @@ Docker related options
 docker service update srv-captain--[your-app-name] --detach --force                ## restarts your app
 To see Docker output
 docker service logs srv-captain--[your-app-name] --since 10m --follow              ## shows last 10 minutes of logs
+
+To install Python native module build tools in a container
+
+      RUN apk add --no-cache make gcc g++ python && \
+        npm install --production --silent && \
+        apk del make gcc g++ python
