@@ -1,14 +1,24 @@
 # linux-captainduckduck-python-example
-DO Docker instance with Captain Duck Duck App installer. (Heroku similar app management)
+Digital Ocean Docker instance with Captain Duck Duck App installer. (Heroku similar app management)
+
+After instance started npm and node should be installed.
 
 Python - Flask based working example app with "Captain Duck Duck" setting file.
-https://github.com/githubsaturn/captainduckduck
+
+	Settings
+	https://github.com/githubsaturn/captainduckduck
+	https://github.com/githubsaturn/captainduckduck/wiki/Getting-Started
+
 
 To set up domain:
 
 	In your domain registrar (and Digital Ocean (etc...) domain settings also) settings there should be 2 records;
 	A Record - subdomain - ip
 	A Record - *.subdomain - ip
+
+Other details on setting custom domain
+	
+	https://github.com/githubsaturn/captainduckduck/issues/138
 
 
 Application deployment methods are described here:
@@ -22,3 +32,9 @@ To start application with Flask web server "captain-definition.1" should be used
 
 	"ENTRYPOINT [\"python\"]",
 	"CMD [\"app.py\"]",	
+
+No need to change port settings. Captain expects default Docker container port as 80.
+If it is necessery to change (app exposed on different port over Docer) Nginx settings should be arranged as well in Captain application app settings as follows
+
+	set $upstream http://<%-s.localDomain%>:8080;
+	
