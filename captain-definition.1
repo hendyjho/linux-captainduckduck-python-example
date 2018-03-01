@@ -1,0 +1,19 @@
+{
+  "schemaVersion" :1 ,
+  "dockerfileLines" :[
+                        "FROM ubuntu:latest",
+                        "RUN apt-get update -y",
+                        "RUN apt-get install -y python-pip python-dev build-essential",
+                        "RUN pip install --upgrade pip",
+                        "RUN mkdir -p /usr/src/app",
+                        "WORKDIR /usr/src/app",
+                        "COPY ./src /usr/src/app",                        
+                        "RUN pip install -r requirements.txt",
+                        "ENV PORT 80",
+                        "EXPOSE 80",
+                        "ENTRYPOINT [\"python\"]",
+                        "CMD [\"app.py\"]",
+                        "#CMD ["rackup", "config.ru", "--host", "0.0.0.0", "--port", "80"]"
+                    ]
+ }
+ 

@@ -1,0 +1,8 @@
+
+To try on local Docker instance:
+http://containertutorials.com/docker-compose/flask-simple-app.html
+build docker image
+docker build -t flask-sample-one:latest .
+run image as container
+docker run -d -p 5000:5000 flask-sample-one
+
