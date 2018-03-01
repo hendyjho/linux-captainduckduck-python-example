@@ -1,5 +1,6 @@
 # linux-captainduckduck-python-example
 Setting up Digital Ocean Docker instance with Captain Duck Duck App installer. (Heroku similar app management)
+Repository contains Python - Flask based working example app with "Captain Duck Duck" setting file.
 
 After starting instance, npm and node should be installed. (apt install npm & node)
 
@@ -7,14 +8,13 @@ After starting instance, npm and node should be installed. (apt install npm & no
 	sudo apt-get install -y nodejs
 	sudo apt-get install npm
 
-Python - Flask based working example app with "Captain Duck Duck" setting file.
 
-	Settings
+Captain setup
 	https://github.com/githubsaturn/captainduckduck
 	https://github.com/githubsaturn/captainduckduck/wiki/Getting-Started
 
 
-To set up domain:
+<b>To set up domain:</b>
 
 	In your domain registrar (and Digital Ocean (etc...) domain settings also) settings there should be 2 records;
 	A Record - subdomain - ip
@@ -25,8 +25,10 @@ Other details on setting custom domain
 	https://github.com/githubsaturn/captainduckduck/issues/138
 
 
-Application deployment methods are described here:
+Application <b>deployment</b> methods are described here:
 https://github.com/githubsaturn/captainduckduck/wiki/Deployment-Methods
+
+<b>Other settings</b> needs to attension:
 
 To start application with gunicorn "captain-definition" file should be used (default).
 
