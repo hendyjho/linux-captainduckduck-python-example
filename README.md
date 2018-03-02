@@ -51,4 +51,6 @@ If it is necessery to change (app exposed on different port over Docer) Nginx se
 
 <b>Other things to consider:</b>
 
--There is no gracefull reload or Blue/Green deployment option.
+	-There is no gracefull reload or Blue/Green deployment option.
+	-No explicit message or warning to understand if new deployment is live.
+	-There is no option/feature to see previous action logs. (other then docker service logs.)
