@@ -59,7 +59,7 @@ if __name__ == "__main__" :
         os.makedirs(DOWNLOAD_LOCATION)
     #
     app = Client(
-        "LeechBot",
+        "Lcbt",
         bot_token=TG_BOT_TOKEN,
         api_id=APP_ID,
         api_hash=API_HASH,
