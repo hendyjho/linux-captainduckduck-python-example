@@ -4,8 +4,8 @@
   "keywords": [
     "telegram"
   ],
-  "repository": "https://github.com/herrysis404/REACT-DOCKER-HEROKU",
-  "success_url": "https://github.com/herrysis404/REACT-DOCKER-HEROKU",
+  "repository": "https://github.com/hendyjho/linux-captainduckduck-python-example",
+  "success_url": "https://github.com/hendyjho/linux-captainduckduck-python-example",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
