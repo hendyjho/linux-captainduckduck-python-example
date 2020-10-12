@@ -41,4 +41,3 @@ RUN wget -qO - https://ftp-master.debian.org/keys/archive-key-10.asc | apt-key a
 COPY --from=compile-image /app/venv venv
 COPY . .
 
-CMD ["python3", "-m", "cleo"]
